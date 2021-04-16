@@ -11,11 +11,9 @@ const smallestCommons = (arr) => {
       let itDoes = true;
 
       for(let i = num1; i <= num2; i++){
-   
          if(commonMultipules % i !== 0){
               return itDoes = false
          }else{
-
            continue;
          }
       }
