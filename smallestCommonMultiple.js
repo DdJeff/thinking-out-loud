@@ -1,7 +1,7 @@
 //Smallest Common Multiple
-const smallestCommons(arr) => {
+const smallestCommons = (arr) => {
 
-    const [num1,num2] = arr = arr.sort((a,b)=> a-b);
+    const [num1,num2] = arr = arr.sort((a,b)=> a-b); //sort evauvates the uicode so 10 is before 2. it like a sting. so you have to use a switch function
     
     let commonMultipules = 0;
     let testCase = false;
@@ -9,11 +9,13 @@ const smallestCommons(arr) => {
   
     const range = (num1,num2,commonMultipules) =>{
       let itDoes = true;
+
       for(let i = num1; i <= num2; i++){
-       // console.log(num1, num2, "range")
+   
          if(commonMultipules % i !== 0){
               return itDoes = false
          }else{
+             
            continue;
          }
       }
