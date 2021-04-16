@@ -1,7 +1,7 @@
 //Smallest Common Multiple
 const smallestCommons = (arr) => {
 
-    const [num1,num2] = arr = arr.sort((a,b)=> a-b); //sort evauvates the uicode so 10 is before 2. it like a sting. so you have to use a switch function
+    const [num1,num2] = arr = arr.sort((a,b)=> a-b);//note the issue with sort() [2,10]
     
     let commonMultipules = 0;
     let testCase = false;
@@ -15,7 +15,7 @@ const smallestCommons = (arr) => {
          if(commonMultipules % i !== 0){
               return itDoes = false
          }else{
-             
+
            continue;
          }
       }
