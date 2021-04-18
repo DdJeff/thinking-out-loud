@@ -10,7 +10,7 @@ function myReplace(str, before, after) {
       let a = str.split(" ")
     
     // check for word
-      for(let i = 0; i < a.length; i++){
+     for(let i = 0; i < a.length; i++){
     
         if(a[i] == before){
 
@@ -23,6 +23,7 @@ function myReplace(str, before, after) {
       }
      
       str = (a.join(" "))
+      
       return str;
     }
     
