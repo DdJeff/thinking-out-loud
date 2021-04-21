@@ -22,6 +22,7 @@ function convertHTML(str) {
           str[i] = key(str[i])
         }//end if
       }
+      let a = "i love the cakes"
     
     //return updated str
     return str.join("");
